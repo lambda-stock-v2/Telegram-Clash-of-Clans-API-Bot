@@ -11,9 +11,11 @@ api_hash = os.environ.get('API_HASH', None)
 bot_token = os.environ.get('BOT_TOKEN', None)
 coc_api_token = os.environ.get('COC_API_TOKEN', None)
 
+
+authApi = f"""Bearer {coc_api_token}"""
 headers = {
 	'Accept': 'application/json',
-	'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImIzYThmZDUzLTk2MTMtNGZjZi05NjQxLWY5YzI5NDQ5ZWQyYyIsImlhdCI6MTY0OTI2NzkxNywic3ViIjoiZGV2ZWxvcGVyL2ZjZmQ3ZTg1LWM4ZTgtNjc4MS00N2Y0LWFiNDg5MTcwNjAyYyIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjE3Ni4yMzQuOC40MiJdLCJ0eXBlIjoiY2xpZW50In1dfQ.ZNSmJaAFEAroIixXbDzU1b714B_ONy3Jvdbj-TqC0gj0ztnMYPJOs1NAO_6_yK-yWGZ7SQ62CcNhndzBvviouQ'
+	'authorization': authApi
 }
 
 app = Client(
