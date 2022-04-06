@@ -16,9 +16,8 @@
             "required": "True"
         },
         "COC_API_TOKEN": {
-            "description": "https",
-            "required": "True",
-            "value": "//developers.clashofclans.com"
+            "description": "https://developer.clashofclans.com/",
+            "required": "True"
         }
     },
     "stack": "heroku-20",
