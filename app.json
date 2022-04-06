@@ -1,0 +1,31 @@
+{
+    "name": "Telegram Clash of Clans API Bot",
+    "description": "Clash of Clans API ile yap\u0131lm\u0131\u015f bilgi \u00e7ekme botu.",
+    "repository": "https://github.com/lambda-stock/Telegram-Clash-of-Clans-API-Bot",
+    "env": {
+        "API_HASH": {
+            "description": "@TeleORG_Bot",
+            "required": "True"
+        },
+        "API_ID": {
+            "description": "@TeleORG_Bot",
+            "required": "True"
+        },
+        "BOT_TOKEN": {
+            "description": "@Botfather",
+            "required": "True"
+        },
+        "COC_API_TOKEN": {
+            "description": "https",
+            "required": "True",
+            "value": "//developers.clashofclans.com"
+        }
+    },
+    "stack": "heroku-20",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
