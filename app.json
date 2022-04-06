@@ -20,13 +20,6 @@
             "required": "True"
         }
     },
-    "stack": "heroku-20",
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
     "buildpacks": [
         {
             "url": "heroku/python"
