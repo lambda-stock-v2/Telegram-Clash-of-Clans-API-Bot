@@ -20,7 +20,7 @@ headers = {
 
 app = Client(
     "lambdasession",
-    api_id=19068625, api_hash="69c2a6d36060b1e333348ccfad6ca768", bot_token="5190654615:AAGqMxd148_h_e7e3iJFXYrb98nz_c_sqOo"
+    api_id=api_id, api_hash=api_hash, bot_token=bot_token
 )	
 
 @app.on_message(filters.command("start"))
